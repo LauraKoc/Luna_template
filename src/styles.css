@@ -1,5 +1,6 @@
 body {
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan", sans-serif;
+  font-size: 16px;
 }
 
 .bg-color {
@@ -7,14 +8,75 @@ body {
 }
 
 .banner {
-background: url("./../img/background.png");
-width: 100%;
-height: 100vh;
-background-size: contain;
-background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-swipe img {
+  width: 10px;
+  height: 24px;
+
 }
 
 .banner__slogan {
-  
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
 }
+.banner__slogan span {
+  color: #4ba9ff;
+}
+
+.line::before {
+  content: url('./../img/line.png');
+  position: absolute;
+  top: 40px;
+}
+
+.about__text-block{
+  padding:  20px 10px;
+}
+
+@media (min-width: 460px) {
+  /* .banner {
+    height: 300px;
+  } */
+  .banner__slogan {
+    font-size: 22px;
+  }
+  .btn-swipe img {
+    width: 20px;
+    height: 34px;
+  
+  }
+}
+
+@media (min-width: 768px) {
+  /* .banner {
+    height: 450px;
+  } */
+  .banner__slogan {
+    font-size: 44px;
+  }
+  .btn-swipe img {
+    width: 20px;
+    height: 34px;
+  
+  }
+}
+
 
